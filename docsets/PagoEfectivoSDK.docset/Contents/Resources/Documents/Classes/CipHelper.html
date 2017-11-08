@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CipHelper Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/CipHelper" class="dashAnchor"></a>
+    <a title="CipHelper Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PagoEfectivoSDK Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fpagoefectivo%2Egithub%2Eio%2Fdocsets%2FPagoEfectivoSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PagoEfectivoSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CipHelper Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Auth.html">Auth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Cip.html">Cip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CipHelper.html">CipHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CipRequest.html">CipRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Globals.html">Globals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Helper.html">Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PagoEfectivoSDK.html">PagoEfectivoSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/API_STATUS.html">API_STATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/currency.html">currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/documentType.html">documentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/language.html">language</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:Cip.h@T@serviceCallbackCipSearch">serviceCallbackCipSearch</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CipHelper</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CipHelper</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>CipHelper</code> es la clase helper donde se aloja funcionalidades genéricas</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Validations"></a>
+                <a name="//apple_ref/objc/Section/Validations" class="dashAnchor"></a>
+                <a href="#/Validations">
+                  <h3 class="section-name">Validations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CipHelper(cm)validateCurrency:"></a>
+                    <a name="//apple_ref/objc/Method/+validateCurrency:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CipHelper(cm)validateCurrency:">+validateCurrency:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>validateCurrency</code> es el método que válida si un valor ingresado es realmente de tipo <code><a href="../Enums/currency.html">currency</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">validateCurrency</span><span class="p">:(</span><span class="n"><a href="../Enums/currency.html">currency</a></span><span class="p">)</span><span class="nv">currency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currency</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>el valor ingresado</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>retorna un valor de tipo <code>BOOL</code> si es válido es TRUE en caso contrario FALSE</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CipHelper(cm)validateAmount:"></a>
+                    <a name="//apple_ref/objc/Method/+validateAmount:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CipHelper(cm)validateAmount:">+validateAmount:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>validateAmount</code> es el método que válida si un valor ingresado es realmente de tipo <code>amount</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">validateAmount</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">amount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>el valor ingresado debe ser de tipo <code>double</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>retorna un valor de tipo <code>BOOL</code> si es válido es TRUE en caso contrario FALSE</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CipHelper(cm)validateTransactionCode:"></a>
+                    <a name="//apple_ref/objc/Method/+validateTransactionCode:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CipHelper(cm)validateTransactionCode:">+validateTransactionCode:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>validateTransactionCode</code> es el método que válida si un valor ingresado es realmente de tipo <code>NSString</code> y contiene al menos un caractér</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">validateTransactionCode</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">transactionCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>el valor ingresado debe ser de tipo <code>NSString</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>retorna un valor de tipo <code>BOOL</code> si es válido es TRUE en caso contrario FALSE</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CipHelper(cm)validateUserEmail:"></a>
+                    <a name="//apple_ref/objc/Method/+validateUserEmail:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CipHelper(cm)validateUserEmail:">+validateUserEmail:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>validateTransactionCode</code> es el método que válida si un valor ingresado es realmente de tipo <code>NSString</code> y contiene al menos un caractér</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">validateUserEmail</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userEmail</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userEmail</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>el valor ingresado debe ser de tipo <code>NSString</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>retorna un valor de tipo <code>BOOL</code> si es válido es TRUE en caso contrario FALSE</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CipHelper(cm)validateArrayCip:"></a>
+                    <a name="//apple_ref/objc/Method/+validateArrayCip:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CipHelper(cm)validateArrayCip:">+validateArrayCip:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>validateArrayCip</code> es el método que válida una colleción de valores de tipo NSArray</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">validateArrayCip</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">cips</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cips</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>la colleción de tipo NSArray</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>retorna un valor de tipo <code>BOOL</code> si es válido es TRUE en caso contrario FALSE</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/PagoEfectivo" target="_blank" rel="external">PagoEfectivo</a>. All rights reserved. (Last updated: 2017-11-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

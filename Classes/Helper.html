@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Helper Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/Helper" class="dashAnchor"></a>
+    <a title="Helper Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PagoEfectivoSDK Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fpagoefectivo%2Egithub%2Eio%2Fdocsets%2FPagoEfectivoSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PagoEfectivoSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Helper Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Auth.html">Auth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Cip.html">Cip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CipHelper.html">CipHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CipRequest.html">CipRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Globals.html">Globals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Helper.html">Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PagoEfectivoSDK.html">PagoEfectivoSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/API_STATUS.html">API_STATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/currency.html">currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/documentType.html">documentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/language.html">language</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:Cip.h@T@serviceCallbackCipSearch">serviceCallbackCipSearch</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Helper</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">Helper</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>Helper</code> es la clase que se dedica a dar funcionalidades genéricas para la interacción con el API</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Helper(cm)callService:headers:params:responseHandler:"></a>
+                    <a name="//apple_ref/objc/Method/+callService:headers:params:responseHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Helper(cm)callService:headers:params:responseHandler:">+callService:headers:params:responseHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>callService</code> es el método de tipo <code>void</code> que me permite realizar una petición a un servicio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">callService</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span>
+            <span class="nf">headers</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">headers</span>
+             <span class="nf">params</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">params</span>
+    <span class="nf">responseHandler</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a></span><span class="p">)</span><span class="nv">callback</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Es la dirección URL del servicio a consultar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Son las cabeceras que se enviarán en la petición a realizar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>params</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Son los parámetros que se enviarán en la petición a realizar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Es la función de typo <code><a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a></code> que nos permitirá manejar la respuesta del servicio</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Helper(cm)callService:params:responseHandler:"></a>
+                    <a name="//apple_ref/objc/Method/+callService:params:responseHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Helper(cm)callService:params:responseHandler:">+callService:params:responseHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>callService</code> es el método de tipo <code>void</code> que me permite realizar una petición a un servicio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">callService</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span>
+             <span class="nf">params</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">params</span>
+    <span class="nf">responseHandler</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a></span><span class="p">)</span><span class="nv">callback</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Es la dirección URL del servicio a consultar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>params</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Son los parámetros que se enviarán en la petición a realizar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Es la función de typo <code><a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a></code> que nos permitirá manejar la respuesta del servicio</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Helper(cm)getDateToRequest"></a>
+                    <a name="//apple_ref/objc/Method/+getDateToRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Helper(cm)getDateToRequest">+getDateToRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>getDateToRequest</code> es el método que retorna el tiempo en el formato como indica el servicio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getDateToRequest</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Helper(cm)getDateToRequest:"></a>
+                    <a name="//apple_ref/objc/Method/+getDateToRequest:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Helper(cm)getDateToRequest:">+getDateToRequest:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>getDateToRequest</code> es el método que retorna el tiempo en el formato como indica el servicio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">getDateToRequest</span><span class="p">:(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">dateToFormat</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateToFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Es la fecha de tipo <code>NSDate</code> a aplicar formato</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Helper(cm)generateHashToRequest:accessKey:secretKey:dateRequest:"></a>
+                    <a name="//apple_ref/objc/Method/+generateHashToRequest:accessKey:secretKey:dateRequest:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Helper(cm)generateHashToRequest:accessKey:secretKey:dateRequest:">+generateHashToRequest:accessKey:secretKey:dateRequest:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>generateHashToRequest</code> es el método que retorna el hash que solicita el servicio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">generateHashToRequest</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">idService</span>
+                          <span class="nf">accessKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">accessKey</span>
+                          <span class="nf">secretKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">secretKey</span>
+                        <span class="nf">dateRequest</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">dateRequest</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>idService</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>En este parámetro debe ingresarse un id válido</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>En este parámetro debe ingresarse un accessKey válido</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secretKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>En este parámetro debe ingresarse un secretKey válido</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>En este parámetro debe ingresarse un dateRequest válido</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Helper(cm)generateDictionaryFromArray:"></a>
+                    <a name="//apple_ref/objc/Method/+generateDictionaryFromArray:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Helper(cm)generateDictionaryFromArray:">+generateDictionaryFromArray:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>generateDictionaryFromArray</code> es el método que retorna un <code>NSdictionary*</code> desde un <code>NSArray*</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nf">generateDictionaryFromArray</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">nsarray</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nsarray</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>En este parámetro debe ingresarse el array de valores</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/PagoEfectivo" target="_blank" rel="external">PagoEfectivo</a>. All rights reserved. (Last updated: 2017-11-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

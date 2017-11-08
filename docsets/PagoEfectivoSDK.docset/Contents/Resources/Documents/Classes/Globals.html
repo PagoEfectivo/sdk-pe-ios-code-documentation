@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Globals Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/Globals" class="dashAnchor"></a>
+    <a title="Globals Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PagoEfectivoSDK Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fpagoefectivo%2Egithub%2Eio%2Fdocsets%2FPagoEfectivoSDK%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PagoEfectivoSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Globals Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Auth.html">Auth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Cip.html">Cip</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CipHelper.html">CipHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CipRequest.html">CipRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Globals.html">Globals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Helper.html">Helper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PagoEfectivoSDK.html">PagoEfectivoSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/API_STATUS.html">API_STATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/currency.html">currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/documentType.html">documentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/language.html">language</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:Globals.h@T@serviceCallback">serviceCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:Cip.h@T@serviceCallbackCipSearch">serviceCallbackCipSearch</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Globals</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">Globals</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>Globals</code> es la clase que provee propiedades transversales al SDK</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/objc/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)currencyToString:"></a>
+                    <a name="//apple_ref/objc/Method/+currencyToString:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)currencyToString:">+currencyToString:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforma el <code>Currency</code> ingresado en la aplicación retornando una cadena</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">currencyToString</span><span class="p">:(</span><span class="n"><a href="../Enums/currency.html">currency</a></span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>de tipo <code><a href="../Enums/currency.html">currency</a></code> a transformar</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)documentTypeToString:"></a>
+                    <a name="//apple_ref/objc/Method/+documentTypeToString:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)documentTypeToString:">+documentTypeToString:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforma el <code><a href="../Enums/documentType.html">documentType</a></code> ingresado en la aplicación retornando una cadena</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">documentTypeToString</span><span class="p">:(</span><span class="n"><a href="../Enums/documentType.html">documentType</a></span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>de tipo <code><a href="../Enums/documentType.html">documentType</a></code> a transformar</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)languageToString:"></a>
+                    <a name="//apple_ref/objc/Method/+languageToString:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)languageToString:">+languageToString:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transforma el <code><a href="../Enums/language.html">language</a></code> ingresado en la aplicación retornando una cadena</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">languageToString</span><span class="p">:(</span><span class="n"><a href="../Enums/language.html">language</a></span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>de tipo <code><a href="../Enums/language.html">language</a></code> a transformar</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)getURLService"></a>
+                    <a name="//apple_ref/objc/Method/+getURLService" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)getURLService">+getURLService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retorna la URL base del servicio</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getURLService</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)getURLAuth"></a>
+                    <a name="//apple_ref/objc/Method/+getURLAuth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)getURLAuth">+getURLAuth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retorna la URL de la autorización</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getURLAuth</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)getURLGenerateCip"></a>
+                    <a name="//apple_ref/objc/Method/+getURLGenerateCip" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)getURLGenerateCip">+getURLGenerateCip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retorna la URL de la generación de CIP</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getURLGenerateCip</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)getURLSearchCip"></a>
+                    <a name="//apple_ref/objc/Method/+getURLSearchCip" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)getURLSearchCip">+getURLSearchCip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retorna la URL de buscar CIP</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getURLSearchCip</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Globals(cm)getAPIStatus:"></a>
+                    <a name="//apple_ref/objc/Method/+getAPIStatus:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Globals(cm)getAPIStatus:">+getAPIStatus:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retorna el status numérico en base a un valor de tipo API_STATUS</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="nf">getAPIStatus</span><span class="p">:(</span><span class="n"><a href="../Enums/API_STATUS.html">API_STATUS</a></span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/PagoEfectivo" target="_blank" rel="external">PagoEfectivo</a>. All rights reserved. (Last updated: 2017-11-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
